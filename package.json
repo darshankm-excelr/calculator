@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "daisyui": "^4.7.3",
+    "tailwindcss": "^3.4.1"
+  },
+  "name": "contributions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "styles": "npx tailwindcss -i ./input.css -o ./styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
