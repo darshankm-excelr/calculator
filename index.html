@@ -6,6 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
   <title>CALCULATOR</title>
+  <style>
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+
+    /* For Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,73 +33,62 @@
           d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
       </svg>
     </label>
-    <div class="w-[80%] h-[80%] bg-primary-content rounded-lg shadow-2xl flex flex-col">
-      <p class=" h-[70%] md:w-full md:h-[40%] ">input</p>
-      <div class="h-full w-full grid grid-cols-4 md:gap-4 gap-2 md:p-10 p-4">
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
+    <!-- theme controller -->
+    <div
+      class="w-full h-full md:w-[80%] md:h-[80%] bg-primary-content rounded-lg shadow-2xl flex flex-col justify-center items-center">
+      <section class=" h-[70%] md:w-full md:h-[40%]  w-full mb-2 flex items-end mb-10">
+        <input type="number" class="input w-full cursor-default bg-base-300 mx-4 my-3" />
+      </section>
+      <div class="h-full w-full  grid grid-cols-4  md:gap-4 gap-2 md:p-10 pl-[6%] ">
+        <div class="calsi-btn">
           1
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn">
+          2
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn">
+          3
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn calsi-btn-center">
+          +
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn">
+          4
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn">
+          5
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn">
+          6
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn calsi-btn-center">
+          -
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn">
+          7
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn">
+          8
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn">
+          9
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn calsi-btn-center">
+          &#215
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class=" calsi-btn calsi-btn-center">
+          C
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn">
+          0
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn calsi-btn-center">
+          /
         </div>
-        <div
-          class="kbd md:w-full md:h-full btn hover:bg-error rounded-full md:rounded-md bg-primary text-primary-content font-bold text-2xl cursor-pointer w-6 h-6">
-          1
+        <div class="calsi-btn calsi-btn-center">
+          =
         </div>
+
 
       </div>
     </div>
