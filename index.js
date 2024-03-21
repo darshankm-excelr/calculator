@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ["+", "-", "*", "x", "/", "X"].includes(lastChar) &&
       ["+", "-", "*", "x", "/", "X"].includes(value)
     ) {
-      alert("operator clash");
+      alert("invalid expression");
       return;
     }
     if (value === "=") return;
