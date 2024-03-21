@@ -6,18 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
   <title>CALCULATOR</title>
-  <style>
-    input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button {
-      appearance: none;
-      margin: 0;
-    }
-
-    /* For Firefox */
-    input[type=number] {
-      -moz-appearance: textfield;
-    }
-  </style>
 </head>
 
 <body>
@@ -34,58 +22,59 @@
       </svg>
     </label>
     <!-- theme controller -->
-    <div
-      class="w-full h-full md:w-[80%] md:h-[80%] bg-primary-content rounded-lg shadow-2xl flex flex-col justify-center items-center">
-      <section class=" h-[70%] md:w-full md:h-[40%]  w-full mb-2 flex items-end mb-10">
-        <input type="number" class="input w-full cursor-default bg-base-300 mx-4 my-3" />
+    <div class="w-full h-full md:w-[80%] md:h-[80%] bg-primary-content rounded-lg shadow-2xl flex flex-col ">
+      <section class=" h-[70%] md:w-full md:h-[40%]  w-full mb-2 flex mb-10 flex-col items-center">
+        <div class="flex flex-1 items-end justify-end w-[90%] " id="expression"></div>
+        <input type="text" class="input w-[90%] cursor-default bg-base-300  h-[20vh] mb-2 md:h-[10vh]" id="input"
+          autofocus />
       </section>
       <div class="h-full w-full  grid grid-cols-4  md:gap-4 gap-2 md:p-10 pl-[6%] ">
-        <div class="calsi-btn">
+        <div class="calsi-btn" id="numBtn">
           1
         </div>
-        <div class="calsi-btn">
+        <div class="calsi-btn" id="numBtn">
           2
         </div>
-        <div class="calsi-btn">
+        <div class="calsi-btn" id="numBtn">
           3
         </div>
-        <div class="calsi-btn calsi-btn-center">
+        <div class="calsi-btn calsi-btn-center" id="oprBtn">
           +
         </div>
-        <div class="calsi-btn">
+        <div class="calsi-btn" id="numBtn">
           4
         </div>
-        <div class="calsi-btn">
+        <div class="calsi-btn" id="numBtn">
           5
         </div>
-        <div class="calsi-btn">
+        <div class="calsi-btn" id="numBtn">
           6
         </div>
-        <div class="calsi-btn calsi-btn-center">
+        <div class="calsi-btn calsi-btn-center" id="oprBtn">
           -
         </div>
-        <div class="calsi-btn">
+        <div class="calsi-btn" id="numBtn">
           7
         </div>
-        <div class="calsi-btn">
+        <div class="calsi-btn" id="numBtn">
           8
         </div>
-        <div class="calsi-btn">
+        <div class="calsi-btn" id="numBtn">
           9
         </div>
-        <div class="calsi-btn calsi-btn-center">
-          &#215
+        <div class="calsi-btn calsi-btn-center" id="oprBtn">
+          *
         </div>
-        <div class=" calsi-btn calsi-btn-center">
+        <div class=" calsi-btn calsi-btn-center" id="oprBtn">
           C
         </div>
-        <div class="calsi-btn">
+        <div class="calsi-btn" id="numBtn">
           0
         </div>
-        <div class="calsi-btn calsi-btn-center">
+        <div class="calsi-btn calsi-btn-center" id="oprBtn">
           /
         </div>
-        <div class="calsi-btn calsi-btn-center">
+        <div class="calsi-btn calsi-btn-center equalbtn" id="oprBtn">
           =
         </div>
 
@@ -93,6 +82,7 @@
       </div>
     </div>
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>

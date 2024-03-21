@@ -1825,6 +1825,15 @@ html {
     --tw-text-opacity: 0.2;
   }
 
+  .btm-nav > *.\!disabled:hover {
+    pointer-events: none !important;
+    --tw-border-opacity: 0 !important;
+    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity))) !important;
+    --tw-bg-opacity: 0.1 !important;
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity))) !important;
+    --tw-text-opacity: 0.2 !important;
+  }
+
   .btn:hover {
     --tw-border-opacity: 1;
     border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
@@ -2393,6 +2402,14 @@ html {
      -moz-user-select: none;
           user-select: none;
   color: var(--fallback-bc,oklch(var(--bc)/0.3));
+}
+
+.menu li.\!disabled {
+  cursor: not-allowed !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+  color: var(--fallback-bc,oklch(var(--bc)/0.3)) !important;
 }
 
 .menu :where(li > .menu-dropdown:not(.menu-dropdown-show)) {
@@ -3331,6 +3348,15 @@ input.tab:checked + .tab-content,
   --tw-text-opacity: 0.2;
 }
 
+.btm-nav > *.\!disabled {
+  pointer-events: none !important;
+  --tw-border-opacity: 0 !important;
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity))) !important;
+  --tw-bg-opacity: 0.1 !important;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity))) !important;
+  --tw-text-opacity: 0.2 !important;
+}
+
 .btm-nav > * .label {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -3763,6 +3789,12 @@ input.tab:checked + .tab-content,
   padding: 1rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.card.\!compact .card-body {
+  padding: 1rem !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
 }
 
 .card-title {
@@ -8707,8 +8739,20 @@ html:has(.drawer-open.drawer-open) {
   right: 1.25rem;
 }
 
+.start-1 {
+  inset-inline-start: 0.25rem;
+}
+
 .top-2 {
   top: 0.5rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-10 {
+  top: 2.5rem;
 }
 
 .isolate {
@@ -8763,9 +8807,8 @@ html:has(.drawer-open.drawer-open) {
   clear: none;
 }
 
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+.m-1 {
+  margin: 0.25rem;
 }
 
 .mx-4 {
@@ -8885,8 +8928,20 @@ html:has(.drawer-open.drawer-open) {
   display: list-item;
 }
 
+.\!hidden {
+  display: none !important;
+}
+
 .hidden {
   display: none;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .h-6 {
@@ -8897,8 +8952,8 @@ html:has(.drawer-open.drawer-open) {
   height: 100vh;
 }
 
-.h-\[40vh\] {
-  height: 40vh;
+.h-\[5vh\] {
+  height: 5vh;
 }
 
 .h-\[70\%\] {
@@ -8909,16 +8964,20 @@ html:has(.drawer-open.drawer-open) {
   height: 100%;
 }
 
-.h-\[30vh\] {
-  height: 30vh;
-}
-
 .h-\[20vh\] {
   height: 20vh;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-\[this-is\\\\\] {
@@ -8935,6 +8994,18 @@ html:has(.drawer-open.drawer-open) {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-shrink {
@@ -9926,6 +9997,16 @@ html:has(.drawer-open.drawer-open) {
   background-color: var(--fallback-pc,oklch(var(--pc)/var(--tw-bg-opacity)));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -10038,6 +10119,10 @@ html:has(.drawer-open.drawer-open) {
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .pl-\[6\%\] {
@@ -10512,6 +10597,10 @@ html:has(.drawer-open.drawer-open) {
   forced-color-adjust: none;
 }
 
+.\[a-zA-Z0-9\:\\\\-\\\\\._\$\] {
+  a-z-a--z0-9: \\-\\. $;
+}
+
 @media (hover:hover) {
   .table .hover\:hover:hovertr:hover,
   .table .hover\:hover:hovertr:nth-child(even):hover {
@@ -10638,6 +10727,10 @@ html:has(.drawer-open.drawer-open) {
 
   .md\:h-\[80\%\] {
     height: 80%;
+  }
+
+  .md\:h-\[10vh\] {
+    height: 10vh;
   }
 
   .md\:w-\[80\%\] {
